@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Adjust as needed to accommodate fixed navbar */
+}
+body {
+    background: url('https://media1.giphy.com/media/UYBDCJjwOd9Re/200.webp?cid=ecf05e476aikg403pypbvrtn2fu98l6yd9rno2xcjb6jvdwq&ep=v1_gifs_related&rid=200.webp&ct=g') center center fixed; /* Center the background image and make it fixed */
+    background-size: cover; /* Cover the entire background */
+    margin: 0px 10%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensures it stays on top of other content */
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Add some padding for better spacing */
+}
+
+
+.brand {
+    font-size: 24px;
+    width: 3.5%;
+    cursor: pointer;
+}
+.brand img{
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+
+/* <<<<<<<<<<<< HERO SETION  >>>>>>>>>>>>>>>>>>>>>>>> */
+.hero{
+    margin-top: 8%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    padding: 10px;
+}
+.hero-main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 0px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 0px;
+}
+.font-size{
+    font-size: 2rem;
+}
+.paragraph{
+    text-align: center;
+    font-size: 19px;
+    /* padding: 15px 0px; */
+    line-height: 32px;
+}
+.heilight{
+    color: #0fae96;
+}
+.btn{
+    margin: 30px 0px;
+    padding: 10px;
+    width: 10%;
+    background-color: #000000;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+.get-started a{
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.8s ease-in-out;
+    color: white;
+}
+.get-started:hover{
+    background-color: #f8f8f8;
+    color: black;
+    transition: 0.8s ease-in-out;
+}
+.btn a:hover{
+    color: black;
+    transition: 0.8s ease-in-out;
+}
+
+
+/* <<<<<<<<<<<<<<<<  COIN  >>>>>>>>>>>>>>>>>>> */
+.coin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 50px;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.about-coin{
+    width: 40%;
+    background-color: #05757b;
+    border-radius: 8px;
+}
+.coin-logo{
+    text-align: center;
+    width: 50px;
+    padding: 5px 100px;
+    align-items: center;
+}
+.coin-logo img{
+    align-items: center;
+    width: 100%;
+}
+.coin-name{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 17.5px;
+}
+.coin-prize p{
+    text-align: start;
+    padding: 0px 8px;
+}
+.conin-percent{
+    margin-left: 93px;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<  Bussiness Section  >>>>>>>>>>>>>>>>>>> */
+.bussiness{
+    padding: 15px 0px;
+}
+.bussiness-heading span{
+    padding: 0px 10px;
+}
+.why{
+    margin-top: 5%;
+}
+.community-box{
+    display: grid;
+    grid-template-columns: 26% 26.5% 26%;
+    gap: 0px 10%;
+    margin: 1% 4%;
+}
+.box{
+    background-color: #185e90;
+    height: auto;
+    padding: 0px 20px ;
+    border-radius: 10px;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+.logo i{
+    margin: auto;
+    font-size: 4rem;
+    text-align: center;
+}
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 0px;
+}
+.discription{
+    text-align: center;
+    font-size: 16.5px;
+    padding: 5px 7px;
+}
+
+.learn-explore{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 12px 0px;
+}
+.about-learn{
+    color: #fff;
+    padding: 0px 10px;
+    width: 60%;
+}
+.learn-heading{
+    padding: 12px 0px;
+    font-size: 1.6rem;
+}
+.para{
+    font-size: 17px;
+}
+.learn-btn{
+    width: 10%;
+    background-color: #0fae96;
+    border-radius: 12px;
+    border: none;
+    margin: 0px 12px;
+    cursor: pointer;
+}
+.learn-btn a{
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: none;
+    color: white;
+}
+
+.market-video-image{
+    margin: 5% 0px;
+    padding: 20px 0px;
+}
+.market-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px 20px;
+}
+.video-box{
+    background-color: rgba(107, 106, 106, 0.764);
+    backdrop-filter: blur(10px); 
+    display: flex;
+    align-items: center;
+    padding: 0px 22px;
+    margin: 25px 0px;
+}
+.image-box {
+    background-color: rgba(107, 106, 106, 0.764); /* Set background color with some transparency */
+    display: flex;
+    flex-direction: row;
+    gap: 0px 22px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+}
+.image-box img{
+    padding: 30px 5px;
+    height: 250px;
+    width: 100%;
+}
+
+
+.container2 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (min-width: 768px) {
+    .container2 {
+      max-width: 800px;
+    }
+  }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .contact-info {
+    margin-bottom: 10px;
+  }
+
+  .contact-info p {
+    margin: 5px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+
+
+@media screen and (max-width:991px) {
+    .coin{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .about-coin{
+        width: 270px;
+        margin: 30px 0px;
+    }
+    .btn{
+        width: 20%;
+    }
+    .market-box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .video-box iframe{
+        width: 100%;
+    }
+    .image-box{
+        margin-top: 5%;
+    }
+}
+
+
+@media screen and (max-width:437px){
+    .brand{
+        width: 10%;
+    }
+    .brand img{
+        width: 100%;
+    }
+    .hero{
+        margin-top: 30%;
+    }
+    .coin{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-coin{
+        width: 300px;
+    }
+    .coin-logo{
+        padding: 10px 130px;
+    }
+    .conin-percent{
+        margin-left: 140px;
+    }
+    .btn{
+        width: 80%;
+    }
+
+    .community-box{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 5% 0px;
+        margin: 5% 4%;
+    }
+
+    .learn-explore{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100%;
+    }
+    .about-learn{
+        width: 100%;
+    }
+    .learn-btn{
+        margin-top: 40px;
+        margin-left: 25px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    
+    .image-box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+}
